@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD Pokémon
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <audio controls autoplay loop>
+            <source src="Love tonight.mp3.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Pokémon</label><label class="validation-error hide" id="pokeValidationError">Necesita nombre el Poke</label>
+                        <input type="text" name="poke" id="poke" style="border: 1px solid gray;">
+                    </div>
+                    <div>
+                        <label>Tipo</label>
+                        <input type="text" name="tipo" id="tipo">
+                    </div>
+                    <div>
+                        <label>Ataque</label>
+                        <input type="text" name="ataque" id="ataque">
+                    </div>
+                    <div>
+                        <label>Sonido del Pokémon</label>
+                        <input type="url" name="des" id="des">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Agregar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Pokémon</th>
+                            <th>Tipo</th>
+                            <th>Ataque</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="text-align: center;">
+        <th><h1>¿Cómo crear un nuevo Pokémon?</h1></th>
+    </div>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@petruskaksurtep/video/7189338017411108101" data-video-id="7189338017411108101" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@petruskaksurtep" href="https://www.tiktok.com/@petruskaksurtep?refer=embed">@petruskaksurtep</a> Creando 🎨 un Pokémon 🦊 por partes ✨parte 14✨ +Pre-Evolución 👀 <a title="anime" target="_blank" href="https://www.tiktok.com/tag/anime?refer=embed">#anime</a> <a title="pokemon" target="_blank" href="https://www.tiktok.com/tag/pokemon?refer=embed">#pokemon</a> <a title="pokemonscarletviolet" target="_blank" href="https://www.tiktok.com/tag/pokemonscarletviolet?refer=embed">#pokemonscarletviolet</a> <a title="creandounpersonajeporpartes" target="_blank" href="https://www.tiktok.com/tag/creandounpersonajeporpartes?refer=embed">#creandounpersonajeporpartes</a> <a title="creandounpokemon" target="_blank" href="https://www.tiktok.com/tag/creandounpokemon?refer=embed">#creandounpokemon</a> <a title="creandounpokemonporpartes" target="_blank" href="https://www.tiktok.com/tag/creandounpokemonporpartes?refer=embed">#creandounpokemonporpartes</a> <a title="pikachu" target="_blank" href="https://www.tiktok.com/tag/pikachu?refer=embed">#pikachu</a> <a title="pokemonescarlata" target="_blank" href="https://www.tiktok.com/tag/pokemonescarlata?refer=embed">#pokemonescarlata</a> <a title="pokemonpurpura" target="_blank" href="https://www.tiktok.com/tag/pokemonpurpura?refer=embed">#pokemonpurpura</a> <a target="_blank" title="♬ sonido original - Petruska" href="https://www.tiktok.com/music/sonido-original-7189338019903261446?refer=embed">♬ sonido original - Petruska</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+   
+    <script src="script.js"></script>
+</body>
+</html>
